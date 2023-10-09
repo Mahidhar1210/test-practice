@@ -1,11 +1,2 @@
-I know StackOverflow is not the place for opinion based answers, but I actually have a good opinion on when to shelve changes with a stash.
 
-You don't want to commit you experimental changes
-When you make changes in your workspace/working tree, if you need to perform any branch based operations like a merge, push, fetch or pull, you must be at a clean commit point. So if you have workspace changes you need to commit them. But what if you don't want to commit them? What if they are experimental? Something you don't want part of your commit history? Something you don't want others to see when you push to GitHub?
-
-You don't want to lose local changes with a hard reset
-In that case, you can do a hard reset. But if you do a hard reset you will lose all of your local working tree changes because everything gets overwritten to where it was at the time of the last commit and you'll lose all of your changes.
-
-So, as for the answer of 'when should you stash', the answer is when you need to get back to a clean commit point with a synchronized working tree/index/commit, but you don't want to lose your local changes in the process. Just shelve your changes in a stash and you're good.
-
-And once you've done your stash and then merged or pulled or pushed, you can just stash pop or apply and you're back to where you started from.
+What is the intended use-case for git stash?
